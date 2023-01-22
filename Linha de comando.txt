@@ -20,6 +20,9 @@ terminator - terminal instalado
 	ctrl + shift + e: divisão lateral
 	ctrl + shift + d: fecha a divisão selecionada, ou a última feita
 
+alterar entre usuário/sessões
+	ctrl + alt f'número': altera entre sessões
+
 ----------
 
 OPERADORES
@@ -154,6 +157,7 @@ ler
 	TAIL
 		tail -n: mostra a quantidade de linhas pedidas, de baixo para cima
 			tail -n4 nome-arquivo
+			tail -f nome-arquivo: monitora o arquivo em tempo real
 
 	CLEAR
 
@@ -295,3 +299,30 @@ variáveis e alias
 ----
 
 comparação de arquivos
+	COMM
+		comm: compara 2 ou mais arquivos com uma visualização complicada, em colunas
+			comm arq1 arq2
+			colunas
+				1ª: informações exclusivos do arq1
+				2ª: informações exclusivos do arq2
+
+	VIMDIFF
+		vimdiff: compara 2 ou mais arquivos com uma visualização boa, bem demarcada e também em colunas
+			vimdiff arq1 arq2
+----
+
+monitoramento
+	W
+		w: mostra informações dos usuários que estão conectados
+
+	WATCH
+		watch: executar um programa periodicamente, mostrando a saída em tela cheia
+			watch -n0.2 w
+				-n: tempo para repetir certo comando
+				0.2: 2 segundos
+				w: comando a ser repetido
+
+----
+
+gerenciamento
+	
