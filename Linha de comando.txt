@@ -1,7 +1,12 @@
+Baseado no sistema Kali Linux
+
 user@host
 
 ATALHOS
 
+ctrl + l: limpa a área, mas os comandos já feitos continuam a existir em cima, sem aparecer até arrastar
+ctrl + shift + t: nova aba de comando
+ctrl + alt + t: nova guia de comando
 
 ----------
 
@@ -21,10 +26,11 @@ OPERADORES
 	cat arqinexistente.txt 2>> saida.txt
 
 
-| canalizar a saida de um comando para outro comando
+| canalizar a saida de um comando
 	cat saida.txt | wc -m 
 | > canalizar e substituir
 	cat saida.txt | wc -m > saida.txt
+...
 
 ----------
 
@@ -36,6 +42,9 @@ modificação
 	TOUCH
 	MKDIR
 	NANO
+	RM
+	MV
+	CP
 
 ----
 
@@ -57,22 +66,22 @@ encontrar/listar
 	GREP
 		.
 	
-	FIND - procurar arquivos
-		find / -name "nome-arquivo": por nome
-			/ : caminho
-			-user: por usuário
-			-atime: por tempo = +1(mais de um dia) -1(menos de um dia)
-			-empty: vazios
-			-perm 'soma perm=777': pela permissão
+	FIND 
+		find: procurar arquivos
+			find / -name "nome-arquivo": por nome
+				/ : caminho
+				-user: por usuário
+				-atime: por tempo = +1(mais de um dia) -1(menos de um dia)
+				-empty: vazios
+				-perm 'soma perm=777': pela permissão
 	
 	LOCATE
-		locate nome-aquivo : localizar arquivo especifico
+		locate: localizar arquivo especifico
+			locate nome-aquivo
 			
 ----
 
-	RM
-	MV
-	CP
+ler
 	WC
 	CAT
 	TAIL
@@ -85,7 +94,6 @@ ajuda
 		man comando - a
 	--HELP
 
-----------
+----
 
-PERMISSÕES
-	
+setar permissões	
