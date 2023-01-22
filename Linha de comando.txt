@@ -2,11 +2,39 @@ user@host
 
 ATALHOS
 
+OPERADORES
+
+<> - redirecionamento
+| - piping, canalizar a saida de um comando para outro comando
+	ex: ler um arquivo e passar a saida que seria mostrada para outro comando
+
+> substitui algo dentro de um arquivo
+	echo "msg" > saida.txt
+>> adiciona algo dentro de um arquivo
+	echo "msg" >> saida.txt
+2> susbtitui o conteúdo anterior para a "resposta" do comando atual, para dentro do arquivo
+	cat arqinexistente.txt 2> saida.txt
+2>> adiciona a "resposta" de um comando para dentro de um arquivo
+	cat arqinexistente.txt 2>> saida.txt
+
+
+| canalizar a saida de um comando para outro comando
+	cat saida.txt | wc -m 
+| > canalizar e substituir
+	cat saida.txt | wc -m > saida.txt
 
 COMANDOS
 básicos	/ principais
 
-encontrar
+modificação
+	ECHO
+	TOUCH
+	MKDIR
+	NANO
+
+----
+
+encontrar/listar
 	LS 
 		ls: lista todos os arquivos de um diretório
 			-l: usa formato de lista longa para mostrar os arquivos, e mostra algumas informações como [permissões] e [usuário]
@@ -16,14 +44,39 @@ encontrar
 			-H: segue os links simbólicos listados na linha de comando
 		combinações
 			-la: lista todos os arquivos com informações em formato de lista longa
+			...
 
 	PWD
-		pwd
+		pwd: mostra o caminho em que você se encotra
+
+	GREP
+		.
+	
+	FIND - procurar arquivos
+		find / -name "nome-arquivo": por nome
+			/ : caminho
+			-user: por usuário
+			-atime: por tempo = +1(mais de um dia) -1(menos de um dia)
+			-empty: vazios
+			-perm 'soma perm=777': pela permissão
+	
+	LOCATE
+		locate nome-aquivo : localizar arquivo especifico
+			
+----
+
 	RM
 	MV
 	CP
+	WC
+	CAT
+	TAIL
+	CLEAR
+	
+	
 ajuda
 	MAN
+		man comando - a
 	--HELP
 
 PERMISSÕES
