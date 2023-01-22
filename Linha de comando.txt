@@ -56,11 +56,27 @@ modificação
 
 	TOUCH
 		touch: criar um arquivo
+			touch nome-do-arquivo
 
 	MKDIR
+		mkdir: criar uma pasta
+			mkdir nome-pasta
+
 	NANO
+		nano: abre um arquivo e dá a possibilidade de modificalo
+			nano nome-arquivo
+
 	RM
+		rm: remover arquivos ou diretórios
+			rm nome-arquivo
+			rm diretório
+			rm * : deleta tudo que term no diretório
+			rm letras-presentes-no-nome* : deleta tudo que tiver a sequência de letras especificada
+
 	MV
+		mv: mover um arquivo ou diretório para outro diretório
+			mv nome-arquivo diretório
+
 	CP
 
 ----
@@ -76,9 +92,6 @@ encontrar/listar/descobrir
 		combinações
 			-la: lista todos os arquivos com informações em formato de lista longa
 			...
-
-	PWD
-		pwd: mostra o caminho em que você se encotra
 
 	GREP
 		grep: exibir apenas linhas, plavras... que contenham certar palavras
@@ -110,6 +123,18 @@ ler
 	CAT
 	TAIL
 	CLEAR
+
+----
+
+navegar 
+	PWD
+		pwd: mostra o caminho em que você se encotra
+
+	CD
+		cd: avança ou retrocede um diretório
+			cd Desktop/ : avançar
+			cd .. : pasta anterior
+			cd - : diretório anterior
 
 ----
 
