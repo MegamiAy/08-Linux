@@ -2,6 +2,9 @@ user@host
 
 ATALHOS
 
+
+----------
+
 OPERADORES
 
 <> - redirecionamento
@@ -22,6 +25,8 @@ OPERADORES
 	cat saida.txt | wc -m 
 | > canalizar e substituir
 	cat saida.txt | wc -m > saida.txt
+
+----------
 
 COMANDOS
 básicos	/ principais
@@ -72,12 +77,15 @@ encontrar/listar
 	CAT
 	TAIL
 	CLEAR
-	
+
+----
 	
 ajuda
 	MAN
 		man comando - a
 	--HELP
+
+----------
 
 PERMISSÕES
 	
