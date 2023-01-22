@@ -5,9 +5,18 @@ ATALHOS
 
 COMANDOS
 básicos	/ principais
+
+encontrar
 	LS 
 		ls: lista todos os arquivos de um diretório
-		
+			-l: usa formato de lista longa para mostrar os arquivos, e mostra algumas informações como [permissões] e [usuário]
+			-a: mostra todos os arquivos, até os ocultos (.)
+			-B: não lista entradas que terminem com ~
+			-h: mostra os tamanhos como 1KB, 1M e 1G etc...
+			-H: segue os links simbólicos listados na linha de comando
+		combinações
+			-la: lista todos os arquivos com informações em formato de lista longa
+
 	PWD
 		pwd
 	RM
@@ -16,4 +25,6 @@ básicos	/ principais
 ajuda
 	MAN
 	--HELP
+
+PERMISSÕES
 	
