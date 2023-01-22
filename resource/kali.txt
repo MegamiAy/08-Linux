@@ -28,10 +28,17 @@ ALTERAÇÃO DE SENHA PADRÃO
 por padrão, usuário e senha: kali
 
 para alterar: abra o terminal
+	digite passwd usuário (passwd kali)
+	digite a senha atual: kali
+	e a nova senha: nova-senha
+	reescreva a nova senha: nova-senha
+pronto, senha alterada
 
 CONFIGURAÇÃO DE TECLADO
 	
 procure por keyboard na barra de pesquisa
-	abra a ferramenta > Layoyt > desative as configurações padrão (Use System defaults) > add(adicionar)
+	abra a ferramenta > Layoyt > desative as configurações padrão (Use System defaults) > add(adicionar) > selecione Portuguese(Brazil) > salve e feche
 
-	sudo setxkbmap -model abnt2 -layout br
+OU
+	abra o terminal e utilize o comando abaixo:
+		sudo setxkbmap -model abnt2 -layout br
