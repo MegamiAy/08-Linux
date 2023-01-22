@@ -4,9 +4,15 @@ user@host
 
 ATALHOS
 
-ctrl + l: limpa a área, mas os comandos já feitos continuam a existir em cima, sem aparecer até arrastar
-ctrl + shift + t: nova aba de comando
-ctrl + alt + t: nova guia de comando
+limpeza
+	ctrl + l: limpa a área, mas os comandos já feitos continuam a existir em cima, sem aparecer até arrastar
+abrir
+	ctrl + shift + t: nova aba de comando
+	ctrl + alt + t: nova guia de comando
+terminator - terminal instalado
+	ctrl + shift + o: divisão em baixo
+	ctrl + shift + e: divisão lateral
+	ctrl + shift + d: fecha a divisão selecionada, ou a última feita
 
 ----------
 
