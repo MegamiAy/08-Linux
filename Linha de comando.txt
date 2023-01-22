@@ -1,0 +1,19 @@
+user@host
+
+ATALHOS
+
+
+COMANDOS
+básicos	/ principais
+	LS 
+		ls: lista todos os arquivos de um diretório
+		
+	PWD
+		pwd
+	RM
+	MV
+	CP
+ajuda
+	MAN
+	--HELP
+	
