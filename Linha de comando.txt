@@ -65,7 +65,7 @@ modificação
 
 ----
 
-encontrar/listar
+encontrar/listar/descobrir
 	LS 
 		ls: lista todos os arquivos de um diretório
 			-l: usa formato de lista longa para mostrar os arquivos, e mostra algumas informações como [permissões] e [usuário]
@@ -98,6 +98,10 @@ encontrar/listar
 	LOCATE
 		locate: localizar arquivo especifico
 			locate nome-aquivo
+
+	FILE
+		file: mostra o tipo/formato de uma arquivo
+			file nome-arquivo
 			
 ----
 
