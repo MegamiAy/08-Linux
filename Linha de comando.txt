@@ -28,21 +28,21 @@ OPERADORES
 | - piping, canalizar a saida de um comando para outro comando
 	ex: ler um arquivo e passar a saida que seria mostrada para outro comando
 
-> substitui algo dentro de um arquivo
-	echo "msg" > saida.txt
->> adiciona algo dentro de um arquivo
-	echo "msg" >> saida.txt
-2> susbtitui o conteúdo anterior para a "resposta" do comando atual, para dentro do arquivo
-	cat arqinexistente.txt 2> saida.txt
-2>> adiciona a "resposta" de um comando para dentro de um arquivo
-	cat arqinexistente.txt 2>> saida.txt
+	> substitui algo dentro de um arquivo
+		echo "msg" > saida.txt
+	>> adiciona algo dentro de um arquivo
+		echo "msg" >> saida.txt
+	2> susbtitui o conteúdo anterior para a "resposta" do comando atual, para dentro do arquivo
+		cat arqinexistente.txt 2> saida.txt
+	2>> adiciona a "resposta" de um comando para dentro de um arquivo
+		cat arqinexistente.txt 2>> saida.txt
 
 
-| canalizar a saida de um comando
-	cat saida.txt | wc -m 
-| > canalizar e substituir
-	cat saida.txt | wc -m > saida.txt
-...
+	| canalizar a saida de um comando
+		cat saida.txt | wc -m 
+	| > canalizar e substituir
+		cat saida.txt | wc -m > saida.txt
+	...
 
 ----------
 
@@ -51,7 +51,12 @@ básicos	/ principais
 
 modificação
 	ECHO
+		echo: exibir uma linha de texto	
+			echo "Hello World!"
+
 	TOUCH
+		touch: criar um arquivo
+
 	MKDIR
 	NANO
 	RM
@@ -76,7 +81,10 @@ encontrar/listar
 		pwd: mostra o caminho em que você se encotra
 
 	GREP
-		.
+		grep: exibir apenas linhas, plavras... que contenham certar palavras
+			grep feb
+			grep -i feb
+				-i: ignora letras maiúsculas e minúsculas
 	
 	FIND 
 		find: procurar arquivos
@@ -100,12 +108,25 @@ ler
 	CLEAR
 
 ----
+
+update/downloads
+
+update de sistema
+	UPDATEDB
+		updatedb: atualizar o banco de dados
+
+downloads
+
+----
 	
 ajuda
 	MAN
-		man comando - a
-	--HELP
+		man: abre o manual do comando, com todas as variações e informações
+			man ls
 
+	--HELP
+		--help: exibe as informações do comando
+			ls --help
 ----
 
 setar permissões	
