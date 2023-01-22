@@ -171,19 +171,64 @@ navegar
 
 ----
 
-update/downloads
+downloads
+	WGET
+		wget: download
+			wget -O nome-arquivo URL
+			-O: para nomear o aquivo que será feito o download
+			nome-arquivo: nome dado ao arquivo
+			URL: link para baixar
 
-update de sistema
-	UPDATEDB
-		updatedb: atualizar o banco de dados
-		sudo apt upgrade  && sudo apt full-upgrade: upgrade de sistema
+	CURL
+		curl: ferramenta para transferir dados para um servidor ou de um servidos com alguns protocolos (HTTPS, FTP, FTPS, IMAP...) - downloads ou uploads
+			curl -o nome-arquivo URL
+				-o: para nomear o aquivo
+				nome-aquivo: nome dado
+				URL: link para baixar
+			curl URL > index.html
+				download do link > enviado para o aquivo index.html - download página
 
-downloads/instalar
+	AXEL
+		axel - acelerador de downloads
+	executaveis
+			axel -a -n 20 -o nome-arquivo URL
+				-a - barra de progresso
+				-n - número de conexões para fazer o donwload
+				-o - nomear o arquivo
+			
+----
+
+atualização/intalação/remoção
+	APT UPDATE
+		apt update: verificar atualizações
+
+	APT LIST --UPGRADABLE
+		apt list --upgradable: verificar lista de pacotes que podem ser atualizados
+
+	APT UPGRADE
+		apt upgrade: atualizar pacotes
+			sudo apt upgrade
+
+	APT-CACHE
+		apt-cache search: exibe informações armazenadas no banco de dados do cache
+			apt-cache search terminator
+	
 	APT INSTALL
 		apt install: instalar
-			sudo apt install nome-app
+			sudo apt install pacote
 				sudo apt install terminator
 				sudo: executar um comando como outro usuário
+	
+	DPKG
+		dpkg: instalar .deb
+			sudo dpkg -i nome-pacote.deb
+
+	APT REMOVE
+		apt remove: desinstalar
+			sudo apt remove nome-pacote: desinstala deixando rastros
+			sudo apt remove --purge nome-pacote: desinstala completamente, apagando todos os dados
+			sudo apt remove --purge 'nome completo do arquivo': desinstalar .deb
+
 
 ----
 
@@ -215,12 +260,22 @@ ajuda
 			ls --help
 ----
 
-setar permissões
+usuário/permissões (PARA MAIS INFORMAÇÕES, IR EM PERMISSOES.TXT)
+	WHOAMI
+		whoami: mostrará o nome do usuário atual
+	
+	SU
+		su: trocar de usuário
+			su nome-usuário
 
+	CHMOD
+		chmod: setar permissões
+			sudo chmod 'letra q representa o usuário'='permissões desejadas' nome-arquivo
+				sudo chmod u=rwx, g=---, o=--- nome-arquivo
 
 ----
 
-ver processos/gerenciador de tarefas (PARA MAIS INFORMAÇÕES IR EM PROCESSOS.TXT)
+ver processos/gerenciador de tarefas (PARA MAIS INFORMAÇÕES, IR EM PROCESSOS.TXT)
 
 	HTOP
 		htop: mostra de forma colorida e demarcada, vizualização faculitada
@@ -236,3 +291,7 @@ variáveis e alias
 	NOMEVAR
 		NOMEVAR: criar variável
 			NOMEVAR="conteúdo"
+
+----
+
+comparação de arquivos
