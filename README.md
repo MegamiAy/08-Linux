@@ -1,1 +1,4 @@
 # Linux
+* Comandos
+* Permissões
+* ...
