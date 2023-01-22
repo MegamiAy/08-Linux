@@ -49,10 +49,19 @@ OPERADORES
 COMANDOS
 básicos	/ principais
 
+clear: limpar
+* englobar
+
+----
+
 modificação
 	ECHO
 		echo: exibir uma linha de texto	
 			echo "Hello World!"
+		
+		echo + operador >
+			echo "msg" > nome-arquivo: escreve e subtitui (>) o conteudo do arquivo
+			echo "msg" >> nome-arquivo: escreve e adiciona (>>) a mensagem no arquivo
 
 	TOUCH
 		touch: criar um arquivo
@@ -78,6 +87,8 @@ modificação
 			mv nome-arquivo diretório
 
 	CP
+		cp: copia um arquivo ou diretório para outro diretório
+			cp nome-arquivo diretório
 
 ----
 
@@ -120,8 +131,24 @@ encontrar/listar/descobrir
 
 ler
 	WC
+		wc: exibir contagens de nova linha, palavra e byte para cada arquivo
+		wc -l: exibir quantidade de linhas de um arquivo
+			wc -l nome-arquivo
+		wc -m: exibir quantos caracteres tem no arquivo
+			wc -m nome-arquivo
+
 	CAT
+		cat: exibe o que tem no arquivo, sem entrar
+			cat nome-arquivo
+
+	HEAD
+		head -n: mostra a quantidade de linhas pedidas, de cima para baixo
+			head -n2 nome-arquivo			
+
 	TAIL
+		tail -n: mostra a quantidade de linhas pedidas, de baixo para cima
+			tail -n4 nome-arquivo
+
 	CLEAR
 
 ----
@@ -143,8 +170,32 @@ update/downloads
 update de sistema
 	UPDATEDB
 		updatedb: atualizar o banco de dados
+		sudo apt upgrade  && sudo apt full-upgrade: upgrade de sistema
 
-downloads
+downloads/instalar
+	APT INSTALL
+		apt install: instalar
+			sudo apt install nome-app
+				sudo apt install terminator
+				sudo: executar um comando como outro usuário
+
+----
+
+compactar e descompactar
+	-CF
+		rar, tar, 7z: compactar
+			tar -cf nome-arquivo-a-compactar.tar nome-aquivo1 nome-arquivo2 
+				tar: extensão
+				-cf: ação
+				nome-aquivo-a-compactar: nome final, do arquivo compactado
+				nome-arquivo1 e 2: conteúdo do arquivo compactado
+			
+	-XF
+		rar, tar, 7z: descompactar
+			tar -xf nome-arquivo-compactado.tar
+				tar: extensão
+				-xf: ação
+				nome-arquivo-compactado: arquivo que será descompactado
 
 ----
 	
