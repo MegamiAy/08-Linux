@@ -23,6 +23,10 @@ terminator - terminal instalado
 alterar entre usuário/sessões
 	ctrl + alt f'número': altera entre sessões
 
+cancelar e suspender
+	ctrl + c: cancela a atividade
+	ctrl + z: suspende a atividade
+
 ----------
 
 OPERADORES
@@ -57,7 +61,7 @@ clear: limpar
 
 ----
 
-modificação
+modificação/manipulação
 	ECHO
 		echo: exibir uma linha de texto	
 			echo "Hello World!"
@@ -65,8 +69,15 @@ modificação
 		echo + operador >
 			echo "msg" > nome-arquivo: escreve e subtitui (>) o conteudo do arquivo
 			echo "msg" >> nome-arquivo: escreve e adiciona (>>) a mensagem no arquivo
+		echo + operador |
+			echo "Olá novo mundo" | sed 's/Novo/Velho/': a palavra novo sera substituida pela palavra velho
+			echo "Olá novo mundo" | cut -f 2 -d " "
+				-f 2 - campo 2
+				-d " " - delimitador
+				* vai exibir apenas 'novo'
 
 		echo $nomevar: mostra o que tem dentro de uma variável
+			echo $SHELL: mostra qual shell você está usando no momento
 
 	TOUCH
 		touch: criar um arquivo
@@ -94,7 +105,15 @@ modificação
 	CP
 		cp: copia um arquivo ou diretório para outro diretório
 			cp nome-arquivo diretório
+	
+	CUT
+		cut: remover seções de cada linha de arquivos
+			cut -d "ex:espaço" -f "qual campo" 
+			cut -d " " -f5
 
+	LN
+		ln: fazer links entre arquivos - links simbólicos
+			ln -s caminho arquivo-nome
 ----
 
 encontrar/listar/descobrir
@@ -158,8 +177,6 @@ ler
 		tail -n: mostra a quantidade de linhas pedidas, de baixo para cima
 			tail -n4 nome-arquivo
 			tail -f nome-arquivo: monitora o arquivo em tempo real
-
-	CLEAR
 
 ----
 
@@ -325,4 +342,34 @@ monitoramento
 ----
 
 gerenciamento
-	
+	JOBS
+		jobs: verifica tarefas em andamento
+
+	BG %1
+		bg %1: executar tarefas em segundo plano, retoma em 2º plano uma atividade suspensa
+
+	FG %1
+		fg %1: retomar tarefa em segundo plano para primeiro plano
+
+	&
+		&: ao colocar & ao fim de um comando, ele fica sendo executado em segundo plano
+			ping -c 500 localhost > ping.txt &
+
+	SIGTERM - mata o processo, mas permite uma limpeza
+	SIGKILL - matar o processo - não faz uma limpeza do que já foi feito
+	SIGSTOP - parar/suspender processo
+
+	SYSTEMCTL
+		systemctl [option] [service] 
+		opções
+			start - iniciar
+			stop - parar
+			enable - ativar
+			disable - desativar
+
+----
+
+executar
+	SCRIPT
+		./nome-arquivo.extensão
+		./function.js
