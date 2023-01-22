@@ -63,6 +63,8 @@ modificação
 			echo "msg" > nome-arquivo: escreve e subtitui (>) o conteudo do arquivo
 			echo "msg" >> nome-arquivo: escreve e adiciona (>>) a mensagem no arquivo
 
+		echo $nomevar: mostra o que tem dentro de uma variável
+
 	TOUCH
 		touch: criar um arquivo
 			touch nome-do-arquivo
@@ -126,6 +128,10 @@ encontrar/listar/descobrir
 	FILE
 		file: mostra o tipo/formato de uma arquivo
 			file nome-arquivo
+
+	WHEREIS
+		whereis: mostra o caminho em que o arquivo se encontra
+			whereis nome-arquivos
 			
 ----
 
@@ -209,4 +215,24 @@ ajuda
 			ls --help
 ----
 
-setar permissões	
+setar permissões
+
+
+----
+
+ver processos/gerenciador de tarefas (PARA MAIS INFORMAÇÕES IR EM PROCESSOS.TXT)
+
+	HTOP
+		htop: mostra de forma colorida e demarcada, vizualização faculitada
+
+	TOP
+		top: mostra de forma seca, vizualização confusa
+
+----
+
+variáveis e alias 
+	ENV
+		env: mostra todas as variáveis sendo executadas
+	NOMEVAR
+		NOMEVAR: criar variável
+			NOMEVAR="conteúdo"
