@@ -1,0 +1,6 @@
+Ferramentas de rede
+
+ping - ping <target> - verifica o endereço do alvo
+	-4: verifica apenas o endereço ipv4
+	-i: muda o tempo de intervalo entre as solicitações de ping
+	-v: permite uma saida mais detalhada, verbose
