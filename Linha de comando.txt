@@ -269,6 +269,10 @@ compactar e descompactar
 				-xf: ação
 				nome-arquivo-compactado: arquivo que será descompactado
 
+	UNZIP
+		unzip: descompactar
+			unzip arquivo.zip
+
 ----
 	
 ajuda
