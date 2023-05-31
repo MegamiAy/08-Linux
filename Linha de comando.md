@@ -1,33 +1,34 @@
-Baseado no sistema Kali Linux
+## Baseado no sistema Kali Linux
 
-user@host
+user@host - usuário e host
 
-ATALHOS
+## ATALHOS
 
-limpeza
-	ctrl + l: limpa a área, mas os comandos já feitos continuam a existir em cima, sem aparecer até arrastar
-
-----
-
-abrir
-	ctrl + shift + t: nova aba de comando
-	ctrl + alt + t: nova guia de comando
+* limpeza
+	* `ctrl + l`: limpa a área, mas os comandos já feitos continuam a existir em cima, sem aparecer até arrastar
 
 ----
 
-terminator - terminal instalado
-	ctrl + shift + o: divisão em baixo
-	ctrl + shift + e: divisão lateral
-	ctrl + shift + d: fecha a divisão selecionada, ou a última feita
+* abrir
+	* `ctrl + shift + t`: nova aba de comando
+	* `ctrl + alt + t`: nova guia de comando
 
-alterar entre usuário/sessões
-	ctrl + alt f'número': altera entre sessões
+----
 
-cancelar e suspender
-	ctrl + c: cancela a atividade
-	ctrl + z: suspende a atividade
+* terminator - terminal instalado
+	* `ctrl + shift + o`: divisão em baixo
+	* `ctrl + shift + e`: divisão lateral
+	* `ctrl + shift + d`: fecha a divisão selecionada, ou a última feita
+
+* alterar entre usuário/sessões
+	* `ctrl + alt f`'número': altera entre sessões
+
+* cancelar e suspender
+	* `ctrl + c`: cancela a atividade
+	* `ctrl + z`: suspende a atividade
 
 ----------
+<hr>
 
 OPERADORES
 
