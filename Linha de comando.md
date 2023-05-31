@@ -27,35 +27,35 @@ user@host - usuário e host
 
 ## OPERADORES
 
-\<>\ - redirecionamento
-| - piping, canalizar a saida de um comando para outro comando
+* `<>` - redirecionamento
+* `|` - piping, canalizar a saida de um comando para outro comando
 	ex: ler um arquivo e passar a saida que seria mostrada para outro comando
 
-	* \>\ substitui algo dentro de um arquivo
-		echo "msg" > saida.txt
-	>> adiciona algo dentro de um arquivo
-		echo "msg" >> saida.txt
-	2> susbtitui o conteúdo anterior para a "resposta" do comando atual, para dentro do arquivo
-		cat arqinexistente.txt 2> saida.txt
-	2>> adiciona a "resposta" de um comando para dentro de um arquivo
-		cat arqinexistente.txt 2>> saida.txt
+	* `>` substitui algo dentro de um arquivo
+		* `echo "msg" > saida.txt`
+	* `>>` adiciona algo dentro de um arquivo
+		* `echo "msg" >> saida.txt`
+	* `2>` susbtitui o conteúdo anterior para a "resposta" do comando atual, para dentro do arquivo
+		* `cat arqinexistente.txt 2> saida.txt`
+	* `2>>` adiciona a "resposta" de um comando para dentro de um arquivo
+		* `cat arqinexistente.txt 2>> saida.txt`
 
 
-	| canalizar a saida de um comando
-		cat saida.txt | wc -m 
-	| > canalizar e substituir
-		cat saida.txt | wc -m > saida.txt
+	`|` canalizar a saida de um comando
+		`cat saida.txt | wc -m`
+	`| >` canalizar e substituir
+		`cat saida.txt | wc -m > saida.txt`
 	...
 
 <hr>
 
 ## COMANDOS
-básicos	/ principais
+* básicos / principais
 
-clear: limpar
-* englobar
+	* `clear`: limpar
+	* `*` englobar
 
-----
+<hr>
 
 modificação/manipulação
 	ECHO
