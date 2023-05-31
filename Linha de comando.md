@@ -39,40 +39,38 @@ user@host - usuário e host
 		* `cat arqinexistente.txt 2> saida.txt`
 	* `2>>` adiciona a "resposta" de um comando para dentro de um arquivo
 		* `cat arqinexistente.txt 2>> saida.txt`
-
-
-	`|` canalizar a saida de um comando
-		`cat saida.txt | wc -m`
-	`| >` canalizar e substituir
-		`cat saida.txt | wc -m > saida.txt`
+	* `|` canalizar a saida de um comando
+		* `cat saida.txt | wc -m`
+	* `| >` canalizar e substituir
+		* `cat saida.txt | wc -m > saida.txt`
 
 <hr>
 
 ## COMANDOS
 ### básicos / principais
 
-	* `clear`: limpar
-	* `*` englobar
+* `clear` - limpar
+* `*` englobar
 
 <hr>
 
 ### modificação/manipulação
-	* ECHO
-		* `echo` - exibir uma linha de texto	
-			* `echo "Hello World!"`
+* ECHO
+	* `echo` - exibir uma linha de texto	
+		* `echo "Hello World!"`
 		
-		* echo + operador >
-			* `echo "msg" > nome-arquivo` - escreve e subtitui (>) o conteudo do arquivo
-			* `echo "msg" >> nome-arquivo` - escreve e adiciona (>>) a mensagem no arquivo
-		* echo + operador |
-			`echo "Olá novo mundo" | sed 's/Novo/Velho/'` - a palavra novo sera substituida pela palavra velho
-			`echo "Olá novo mundo" | cut -f 2 -d " "`
-				`-f 2` - campo 2
-				`-d " "` - delimitador
-				`*` - vai exibir apenas 'novo'
+	* echo + operador >
+		* `echo "msg" > nome-arquivo` - escreve e subtitui (>) o conteudo do arquivo
+		* `echo "msg" >> nome-arquivo` - escreve e adiciona (>>) a mensagem no arquivo
+	* echo + operador |
+		`echo "Olá novo mundo" | sed 's/Novo/Velho/'` - a palavra novo sera substituida pela palavra velho
+		`echo "Olá novo mundo" | cut -f 2 -d " "`
+			`-f 2` - campo 2
+			`-d " "` - delimitador
+			`*` - vai exibir apenas 'novo'
 
-		echo $nomevar: mostra o que tem dentro de uma variável
-			echo $SHELL: mostra qual shell você está usando no momento
+	echo $nomevar: mostra o que tem dentro de uma variável
+		echo $SHELL: mostra qual shell você está usando no momento
 
 	TOUCH
 		touch: criar um arquivo
