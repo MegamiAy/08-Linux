@@ -45,26 +45,25 @@ user@host - usuário e host
 		`cat saida.txt | wc -m`
 	`| >` canalizar e substituir
 		`cat saida.txt | wc -m > saida.txt`
-	...
 
 <hr>
 
 ## COMANDOS
-* básicos / principais
+### básicos / principais
 
 	* `clear`: limpar
 	* `*` englobar
 
 <hr>
 
-* modificação/manipulação
+### modificação/manipulação
 	* ECHO
 		* `echo` - exibir uma linha de texto	
 			* `echo "Hello World!"`
 		
 		* echo + operador >
-			echo "msg" > nome-arquivo: escreve e subtitui (>) o conteudo do arquivo
-			echo "msg" >> nome-arquivo: escreve e adiciona (>>) a mensagem no arquivo
+			* `echo "msg" > nome-arquivo` - escreve e subtitui (>) o conteudo do arquivo
+			* `echo "msg" >> nome-arquivo` - escreve e adiciona (>>) a mensagem no arquivo
 		* echo + operador |
 			`echo "Olá novo mundo" | sed 's/Novo/Velho/'` - a palavra novo sera substituida pela palavra velho
 			`echo "Olá novo mundo" | cut -f 2 -d " "`
