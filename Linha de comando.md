@@ -27,11 +27,11 @@ user@host - usuário e host
 
 ## OPERADORES
 
-<> - redirecionamento
+\<>\ - redirecionamento
 | - piping, canalizar a saida de um comando para outro comando
 	ex: ler um arquivo e passar a saida que seria mostrada para outro comando
 
-	> substitui algo dentro de um arquivo
+	* \>\ substitui algo dentro de um arquivo
 		echo "msg" > saida.txt
 	>> adiciona algo dentro de um arquivo
 		echo "msg" >> saida.txt
@@ -47,9 +47,9 @@ user@host - usuário e host
 		cat saida.txt | wc -m > saida.txt
 	...
 
-----------
+<hr>
 
-COMANDOS
+## COMANDOS
 básicos	/ principais
 
 clear: limpar
