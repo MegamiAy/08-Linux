@@ -7,13 +7,9 @@ user@host - usuário e host
 * limpeza
 	* `ctrl + l`: limpa a área, mas os comandos já feitos continuam a existir em cima, sem aparecer até arrastar
 
-----
-
 * abrir
 	* `ctrl + shift + t`: nova aba de comando
 	* `ctrl + alt + t`: nova guia de comando
-
-----
 
 * terminator - terminal instalado
 	* `ctrl + shift + o`: divisão em baixo
@@ -27,10 +23,9 @@ user@host - usuário e host
 	* `ctrl + c`: cancela a atividade
 	* `ctrl + z`: suspende a atividade
 
-----------
 <hr>
 
-OPERADORES
+## OPERADORES
 
 <> - redirecionamento
 | - piping, canalizar a saida de um comando para outro comando
