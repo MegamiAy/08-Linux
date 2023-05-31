@@ -57,20 +57,20 @@ user@host - usuário e host
 
 <hr>
 
-modificação/manipulação
-	ECHO
-		echo: exibir uma linha de texto	
-			echo "Hello World!"
+* modificação/manipulação
+	* ECHO
+		* `echo` - exibir uma linha de texto	
+			* `echo "Hello World!"`
 		
-		echo + operador >
+		* echo + operador >
 			echo "msg" > nome-arquivo: escreve e subtitui (>) o conteudo do arquivo
 			echo "msg" >> nome-arquivo: escreve e adiciona (>>) a mensagem no arquivo
-		echo + operador |
-			echo "Olá novo mundo" | sed 's/Novo/Velho/': a palavra novo sera substituida pela palavra velho
-			echo "Olá novo mundo" | cut -f 2 -d " "
-				-f 2 - campo 2
-				-d " " - delimitador
-				* vai exibir apenas 'novo'
+		* echo + operador |
+			`echo "Olá novo mundo" | sed 's/Novo/Velho/'` - a palavra novo sera substituida pela palavra velho
+			`echo "Olá novo mundo" | cut -f 2 -d " "`
+				`-f 2` - campo 2
+				`-d " "` - delimitador
+				`*` - vai exibir apenas 'novo'
 
 		echo $nomevar: mostra o que tem dentro de uma variável
 			echo $SHELL: mostra qual shell você está usando no momento
