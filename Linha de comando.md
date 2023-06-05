@@ -216,157 +216,159 @@ user@host - usuário e host
 * **APT UPDATE**
 	* `apt update`: verificar atualizações
 
-	APT LIST --UPGRADABLE
-		apt list --upgradable: verificar lista de pacotes que podem ser atualizados
+* **APT LIST --UPGRADABLE**
+	* `apt list --upgradable` - verificar lista de pacotes que podem ser atualizados
 
-	APT UPGRADE
-		apt upgrade: atualizar pacotes
-			sudo apt upgrade
+* **APT UPGRADE** 
+	* `apt upgrade` - atualizar pacotes
+		* `sudo apt upgrade`
 
-	APT-CACHE
-		apt-cache search: exibe informações armazenadas no banco de dados do cache
-			apt-cache search terminator
+* **APT-CACHE** 
+	* apt-cache search: exibe informações armazenadas no banco de dados do cache
+		* `apt-cache search terminator`
 	
-	APT INSTALL
-		apt install: instalar
-			sudo apt install pacote
-				sudo apt install terminator
-				sudo: executar um comando como outro usuário
+* **APT INSTALL**
+	* apt install: instalar
+		* `sudo apt install pacote`
+			* `sudo apt install terminator`
+			* `sudo` - executar um comando como outro usuário
 	
-	DPKG
-		dpkg: instalar .deb
-			sudo dpkg -i nome-pacote.deb
+* **DPKG** 
+	* dpkg: instalar .deb
+		* `sudo dpkg -i nome-pacote.deb`
 
-	APT REMOVE
-		apt remove: desinstalar
-			sudo apt remove nome-pacote: desinstala deixando rastros
-			sudo apt remove --purge nome-pacote: desinstala completamente, apagando todos os dados
-			sudo apt remove --purge 'nome completo do arquivo': desinstalar .deb
+* **APT REMOVE**
+	* apt remove: desinstalar
+		* `sudo apt remove nome-pacote` - desinstala deixando rastros
+		* `sudo apt remove --purge nome-pacote` - desinstala completamente, apagando todos os dados
+		* `sudo apt remove --purge 'nome completo do arquivo'` - desinstalar .deb
 
+<hr>
 
-----
-
-compactar e descompactar
-	-CF
-		rar, tar, 7z: compactar
-			tar -cf nome-arquivo-a-compactar.tar nome-aquivo1 nome-arquivo2 
-				tar: extensão
-				-cf: ação
-				nome-aquivo-a-compactar: nome final, do arquivo compactado
-				nome-arquivo1 e 2: conteúdo do arquivo compactado
+### compactar e descompactar
+* **-CF**
+	* rar, tar, 7z: compactar
+		* `tar -cf nome-arquivo-a-compactar.tar nome-aquivo1 nome-arquivo2`
+			`tar` - extensão
+			`-cf` - ação
+			`nome-aquivo-a-compactar` - nome final, do arquivo compactado
+			`nome-arquivo1 e 2` - conteúdo do arquivo compactado
 			
-	-XF
-		rar, tar, 7z: descompactar
-			tar -xf nome-arquivo-compactado.tar
-				tar: extensão
-				-xf: ação
-				nome-arquivo-compactado: arquivo que será descompactado
+* **-XF** 
+	* rar, tar, 7z: descompactar
+		* `tar -xf nome-arquivo-compactado.tar`
+			* `tar` - extensão
+			* `-xf` - ação
+			* `nome-arquivo-compactado` - arquivo que será descompactado
+			
+* **UNZIP**
+	* unzip: descompactar
+		* `unzip arquivo.zip`
 
-	UNZIP
-		unzip: descompactar
-			unzip arquivo.zip
-
-----
+<hr>
 	
-ajuda
-	MAN
-		man: abre o manual do comando, com todas as variações e informações
-			man ls
+### ajuda
+* **MAN** 
+	* man: abre o manual do comando, com todas as variações e informações
+		* `man ls`
 
-	--HELP
-		--help: exibe as informações do comando
-			ls --help
-----
+* **--HELP**
+		* --help: exibe as informações do comando
+			* `ls --help`
+			
+<hr>
 
-usuário/permissões (PARA MAIS INFORMAÇÕES, IR EM PERMISSOES.TXT)
-	WHOAMI
-		whoami: mostrará o nome do usuário atual
+### usuário/permissões (PARA MAIS INFORMAÇÕES, IR EM PERMISSOES.TXT)
+* **WHOAMI**
+	whoami: mostrará o nome do usuário atual
 	
-	SU
-		su: trocar de usuário
-			su nome-usuário
+* **SU**
+	* su: trocar de usuário
+		* `su nome-usuário`
 
-	CHMOD
-		chmod: setar permissões
-			sudo chmod 'letra q representa o usuário'='permissões desejadas' nome-arquivo
-				sudo chmod u=rwx, g=---, o=--- nome-arquivo
+* **CHMOD**
+	* chmod: setar permissões
+		* `sudo chmod 'letra q representa o usuário'='permissões desejadas' nome-arquivo`
+			* `sudo chmod u=rwx, g=---, o=--- nome-arquivo`
 
-----
+<hr>
 
-ver processos/gerenciador de tarefas (PARA MAIS INFORMAÇÕES, IR EM PROCESSOS.TXT)
+### ver processos/gerenciador de tarefas (PARA MAIS INFORMAÇÕES, IR EM PROCESSOS.TXT)
 
-	HTOP
-		htop: mostra de forma colorida e demarcada, vizualização faculitada
+* **HTOP**
+	`htop` - mostra de forma colorida e demarcada, vizualização faculitada
 
-	TOP
-		top: mostra de forma seca, vizualização confusa
+* **TOP**
+	* `top` - mostra de forma seca, vizualização confusa
 
-----
+<hr>
 
-variáveis e alias 
-	ENV
-		env: mostra todas as variáveis sendo executadas
-	NOMEVAR
-		NOMEVAR: criar variável
-			NOMEVAR="conteúdo"
+### variáveis e alias 
+* **ENV**
+	* `env` - mostra todas as variáveis sendo executadas
 
-----
+* **NOMEVAR**
+	* NOMEVAR: criar variável
+		* `NOMEVAR="conteúdo"`
 
-comparação de arquivos
-	COMM
-		comm: compara 2 ou mais arquivos com uma visualização complicada, em colunas
-			comm arq1 arq2
-			colunas
-				1ª: informações exclusivos do arq1
-				2ª: informações exclusivos do arq2
+<hr>
 
-	VIMDIFF
-		vimdiff: compara 2 ou mais arquivos com uma visualização boa, bem demarcada e também em colunas
-			vimdiff arq1 arq2
-----
+### comparação de arquivos
+* **COMM**
+	* comm: compara 2 ou mais arquivos com uma visualização complicada, em colunas
+		* `comm arq1 arq2`
+		* colunas
+			* 1ª: informações exclusivos do arq1
+			* 2ª: informações exclusivos do arq2
 
-monitoramento
-	W
-		w: mostra informações dos usuários que estão conectados
+* **VIMDIFF** 
+	* vimdiff: compara 2 ou mais arquivos com uma visualização boa, bem demarcada e também em colunas
+		* `vimdiff arq1 arq2`
 
-	WATCH
-		watch: executar um programa periodicamente, mostrando a saída em tela cheia
-			watch -n0.2 w
-				-n: tempo para repetir certo comando
-				0.2: 2 segundos
-				w: comando a ser repetido
+<hr>
 
-----
+### monitoramento
+* **W**
+	`w` - mostra informações dos usuários que estão conectados
 
-gerenciamento
-	JOBS
-		jobs: verifica tarefas em andamento
+* **WATCH**
+	* watch: executar um programa periodicamente, mostrando a saída em tela cheia
+		* `watch -n0.2 w`
+			* `-n` - tempo para repetir certo comando
+			* `0.2` - 2 segundos
+			* `w` - comando a ser repetido
 
-	BG %1
-		bg %1: executar tarefas em segundo plano, retoma em 2º plano uma atividade suspensa
+<hr>
 
-	FG %1
-		fg %1: retomar tarefa em segundo plano para primeiro plano
+### gerenciamento
+* **JOBS** 
+	* `jobs` - verifica tarefas em andamento
 
-	&
-		&: ao colocar & ao fim de um comando, ele fica sendo executado em segundo plano
-			ping -c 500 localhost > ping.txt &
+* **BG %1**
+	* `bg %1` - executar tarefas em segundo plano, retoma em 2º plano uma atividade suspensa
 
-	SIGTERM - mata o processo, mas permite uma limpeza
-	SIGKILL - matar o processo - não faz uma limpeza do que já foi feito
-	SIGSTOP - parar/suspender processo
+* **FG %1**
+	* `fg %1` - retomar tarefa em segundo plano para primeiro plano
 
-	SYSTEMCTL
-		systemctl [option] [service] 
-		opções
-			start - iniciar
-			stop - parar
-			enable - ativar
-			disable - desativar
+* **&**
+	* `&` - ao colocar & ao fim de um comando, ele fica sendo executado em segundo plano
+		* `ping -c 500 localhost > ping.txt &`
 
-----
+* **SIGTERM** - mata o processo, mas permite uma limpeza
+* **SIGKILL** - matar o processo - não faz uma limpeza do que já foi feito
+* **SIGSTOP** - parar/suspender processo
 
-executar
-	SCRIPT
-		./nome-arquivo.extensão
-		./function.js
+* **SYSTEMCTL** 
+	* `systemctl [option] [service]` 
+	* opções:
+		* `start` - iniciar
+		* `stop` - parar
+		* `enable` - ativar
+		* `disable` - desativar
+
+<hr>
+
+### executar
+* **SCRIPT**
+	* ./nome-arquivo.extensão
+	* ./function.js
