@@ -1,6 +1,6 @@
-SHELLS comuns
+#### SHELLS comuns
 
-zsh
-ksh
-dash
-bash
+* zsh
+* ksh
+* dash
+* bash
