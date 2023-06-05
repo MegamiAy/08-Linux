@@ -14,14 +14,14 @@
 		* escolha a pasta onde a máquina virtual ficará
 		* escolha o tipo: linux
 		* versão: debian 64-bit 
-	* > próximo, configure a memória RAM > próximo, disco rígido
+	* `>` próximo, configure a memória RAM > próximo, disco rígido
 		* utilizar um disco virtual existente, procurar
 		* abra o download, a pasta descompactada,
 		* e escolha o arquivo com a extensão .vdi, clique em abrir
 		* selecione Kali-Linux...
 		* clique em escolher
 		* depois em criar
-	* > agora com a máquina já criada > vá em configurações > rede conectado: NAT nome: lab > salve e feche as configurações > agora já pode ser aberto
+	* `>` agora com a máquina já criada > vá em configurações > rede conectado: NAT nome: lab > salve e feche as configurações > agora já pode ser aberto
 
 * ALTERAÇÃO DE SENHA PADRÃO
 
