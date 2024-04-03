@@ -285,6 +285,7 @@ user@host - usuário e host
 * **SU**
 	* su: trocar de usuário
 		* `su nome-usuário`
+    	* exit: sair do usuário
 
 * **CHMOD**
 	* chmod: setar permissões
